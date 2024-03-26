@@ -1,0 +1,139 @@
+.login-row,
+.row {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #ffff;
+  align-items: center;
+}
+
+.login__img img {
+  position: relative;
+  right: 10%;
+  width: 80%;
+  height: 30%;
+}
+
+.login-form {
+  position: relative;
+  right: 40%;
+  width: 135%;
+  background-color: #ffff;
+  max-width: 600px;
+  padding: 50px;
+}
+
+.login-container .login-form h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.login__input {
+  position: relative;
+  margin: 30px 0;
+}
+
+.login__input label {
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  color: #212121;
+}
+
+.login__input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #212121;
+  transition: border-bottom-color 0.3s ease-out;
+}
+
+.login__input input:focus {
+  outline: none;
+  border-bottom-color: #007bff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.login__input input:focus + label,
+.login__input input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.login-form .forgot-password {
+  font-size: 15px;
+  color: #212121;
+  text-align: right;
+  margin: 20px 0;
+}
+
+.login-form .button__login {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  border-radius: 25px;
+  background-color: #28a745;
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.login__img.col-lg-5.offset-lg-1 {
+  display: contents;
+}
+
+.login-form .btn-register {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-form .btn-register a {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.login-form .btn-register a:hover {
+  text-decoration: none;
+}
+
+.login__input .show-password {
+  position: absolute;
+  right: 1%;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.show-login-form{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 215px;
+  /* Điều chỉnh khoảng cách từ đỉnh trên của form login */
+  right: 400px;
+  /* Điều chỉnh khoảng cách từ mép phải của form login */
+  cursor: pointer;
+  z-index: 1;
+  /* Đảm bảo nút đóng hiển thị trên cùng */
+}

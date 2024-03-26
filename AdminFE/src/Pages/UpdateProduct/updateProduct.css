@@ -1,0 +1,86 @@
+/* CSS cho form container */
+.form-container-product {
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 140%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* CSS cho form */
+.form-update-product {
+    width: 80%;
+    align-items: center;
+}
+
+/* CSS cho các hàng trong form */
+.form-row-product {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS cho cột trong form */
+.form-col-product {
+    margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Hiển thị bên trái */
+        flex: 0 0 220px;
+        /* Đặt chiều rộng cố định cho cột */
+}
+
+/* CSS cho nhãn trong form */
+.label {
+    text-align: right;
+    /* Căn chỉnh nhãn về phía phải */
+    font-weight: bold;
+    flex: 1 0 100px;
+    /* Đặt chiều rộng cố định cho nhãn */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa nhãn và input fields */
+}
+
+.form-col-product label {
+    margin-bottom: -60px;
+}
+
+/* CSS cho input fields trong form */
+.input-field-create-product {
+    flex-grow: 1;
+        height: 30px;
+}
+
+
+/* CSS cho nút Submit */
+.submit-btn-update-product {
+    width: 50%;
+    margin-left: 200px;
+}
+
+.update-product {
+    text-align: center;
+}
+
+.form-col-input-product>* {
+    margin-bottom: 30px;
+    
+}
+
+.form-col-input-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-wrapper {
+    margin-bottom: 30px;
+}
+
+.input-field-select {
+    margin-top: 10px;
+}

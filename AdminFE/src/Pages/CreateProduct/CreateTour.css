@@ -1,0 +1,77 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  /* Tăng giá trị max-width để làm cho form rộng hơn */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;
+}
+
+.form-col {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-col label {
+  /* margin-bottom: 10px; */
+  text-align: right;
+  line-height: 50px;
+  font-weight: bold;
+  width: 120px;
+  /* Độ rộng cố định của nhãn */
+}
+
+li.departure {
+  margin-top: 50px;
+}
+
+.form-row
+
+.form-row .ant-input,
+.form-row .ant-input-number,
+.form-row .ant-input.textarea {
+  flex-grow: 1;
+}
+
+/* Thêm một khoảng cách dưới cùng của form-container để tránh nút bấm bị che khuất */
+.form-container>.ant-btn {
+  margin-top: 20px;
+}
+
+/* Thiết lập kích thước của ảnh xem trước */
+.upload-list-inline .ant-upload-list-item {
+  width: 100px;
+  height: 100px;
+}
+
+.upload-list-inline .ant-upload-list-item-thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.form-right>* {
+  margin-bottom: 10px;
+  /* Sử dụng margin-bottom để tạo khoảng cách giữa các phần tử */
+}
+.form-right>Input,
+.form-right>InputNumber,
+.form-right>Upload,
+.form-right>DatePicker,
+.form-right>Input.TextArea,
+.form-right>Checkbox {
+  margin-bottom: 10px;
+  /* Sử dụng margin-bottom để tạo khoảng cách giữa các loại phần tử */
+}
